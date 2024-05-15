@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<databaseChangeLog xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+                   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                   xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
+                   https://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-latest.xsd">
+
+    <changeSet id="0004-create-subscriptions-table" author="szymanczyk">
+        <createTable tableName="subscriptions">
+            <column name="user_id" type="int">
+                <constraints nullable="false" unique="false" primaryKey="false"/>
+            </column>
+            <column name="category_id" type="int">
+                <constraints nullable="false" unique="false" primaryKey="false"/>
+            </column>
+        </createTable>
+    </changeSet>
+
+
+</databaseChangeLog>

@@ -1,0 +1,10 @@
+version: '3.7'
+
+services:
+  db:
+    image: mysql
+    environment:
+      MYSQL_DATABASE: test
+      MYSQL_ROOT_PASSWORD: pat
+    ports:
+      - 3306:3306

@@ -34,6 +34,12 @@ Date and time of method execution.
 Logs are asynchronously communicated to this service via RabbitMQ.
 
 
+Annotations and Aspects
+@MonitorMethod:
+Custom annotation to measure the execution time of methods.
+Implemented using Spring AOP @Around advice.
+
+
 Integration Testing
 Integration tests using Spring Boot Test Containers.
 Tests cover workflows such as method monitoring and email sending.
